@@ -10,7 +10,7 @@
 | Client secret            | 安全密钥                                                     |
 | Authorization Grant Type | 授权类型, 这里为 authorization_code                          |
 | IDaaS Prefix             | 从IDaaS的wellknown中获取，一般格式为 {idaas-domain}/sso/{tn-xxx}/{ai-xxx}/oidc |
-| Redirect Uri             | http://localhost:8080/login/oauth2/code/idaas                |
+| Redirect Uri             | http://localhost:6270/login/oauth2/code/idaas                |
 
 
 
@@ -36,15 +36,15 @@ spring.security.oauth2.client.provider.idaas.user-name-attribute=sub
 
 启动演示应用程序 `mvn spring-boot:run`
 
-导航到`https://localhost:6270`以访问索引站点
+导航到`http://localhost:6270`以访问索引站点
 
 ![prelogin](./misc/prelogin.jpg)
 
-访问`https://localhost:6270/user`以触发登录。
+访问`http://localhost:6270/user`以触发登录。
 
 ![prelogin](./misc/user.jpg)
 
-您还可以导航到`https://localhost:9443/login`Spring Security 创建的默认登录页面。
+您还可以导航到`http://localhost:6270/login`Spring Security 创建的默认登录页面。
 
 ![prelogin](./misc/login.png)
 

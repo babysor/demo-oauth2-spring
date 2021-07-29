@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring Boot OIDC Demo - Login</title>
+    <meta charset="utf-8" />
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+<h3>Your Login Details</h3>
+<div>
+    Welcome <span style="font-weight:bold" th:text="${userName}"/>!
+    You logged in at the OAuth 2.0 Client <span style="font-weight:bold" th:text="${audience}"/>.
+</div>
+</div>
+</body>
+</html>
